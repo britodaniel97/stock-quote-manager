@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql
+    container_name: stock-manager
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD:
+      MYSQL_RANDOM_ROOT_PASSWORD:
+      MYSQL_DATABASE: bootdb
+      MYSQL_PASSWORD: root
+
