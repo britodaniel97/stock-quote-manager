@@ -14,7 +14,7 @@ public class StockController {
     private StockRepository stockRepository;
     @GetMapping
     public ResponseEntity getAllStocks() {
-        var allProducts = stockRepository.findAll();
-        return ResponseEntity.ok(allProducts);
+        var allStocks = stockRepository.findAll();
+        return ResponseEntity.ok(allStocks);
     }
 }
